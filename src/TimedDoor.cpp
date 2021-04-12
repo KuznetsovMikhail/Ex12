@@ -49,5 +49,5 @@ void Timer::registerTimer(DoorTimeAdapter const & _dtAdapter,
 }
 
 void Timer::sleep(unsigned int _sec) {
-  usleep(5);
+  std::this_thread::sleep_for(std::chrono::seconds(_sec));
 }
