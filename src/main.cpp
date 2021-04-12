@@ -4,7 +4,8 @@
 #include "TimedDoor.h"
 
 int main() {
-  TimedDoor* timedDoor1 = new TimedDoor(5);  // create door with 10-seconds timer
+  TimedDoor* timedDoor1 =
+  new TimedDoor(5);  // create door with 10-seconds timer
   try {
     timedDoor1->unlock();
     timedDoor1->throwState();
