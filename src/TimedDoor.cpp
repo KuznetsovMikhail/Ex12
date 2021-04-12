@@ -49,7 +49,7 @@ void Timer::registerTimer(const DoorTimeAdapter & _dtAdapter,
 }
 
 void Timer::sleepTimer(unsigned int _sec) {
-  time_t begin = time(nullptr);
-  while (time(nullptr) - begin - _sec) {
+  time_t end = time(nullptr) + _sec;
+  while (end - time(nullptr)) {
   }
 }
